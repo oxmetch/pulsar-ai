@@ -20,3 +20,10 @@
 /* Keep the hero composition centred under the header on tall screens */
 @media (min-width:992px){.section-hero{padding-top:max(100px,calc(69px + (100svh - 69px - 690px) / 2))}}
 @media (min-width:768px) and (max-width:991px){.section-hero{padding-top:max(100px,calc(69px + (100svh - 69px - 600px) / 2))}}
+/* Mobile: media ticker pinned to the very top, header right below it */
+@media (max-width:767px){
+  .media-mobile{align-items:flex-start;height:auto;top:0;padding-top:0}
+  body:has(.media-mobile) .header{top:32px}
+  .section-hero{padding-top:108px}
+  .section-hero__img-wrap,.hero-img-wrap{transform:translateY(32px)}
+}
