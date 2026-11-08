@@ -1,0 +1,17 @@
+/* Edits made in Paper after the Webflow version */
+.logo_white{width:122px;height:auto;display:block}
+.result-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.result-cards .report-img{height:240px}
+.result-cards .report-img__info-top{flex:1}
+@media (max-width:1279px){.result-cards{gap:16px}.result-cards .report-img{height:200px}}
+@media (min-width:768px) and (max-width:991px){
+  .result-cards{grid-template-columns:1fr}
+  .result-cards .report-img-wrap{flex-direction:row}
+  .result-cards .report-img-wrap{width:100%;min-width:0}
+  .result-cards .report-img__txt-wrap{flex:1 1 auto;min-width:0}
+  .result-cards .report-img{width:280px!important;flex:0 0 280px;height:auto;min-height:180px;flex-shrink:0;border-radius:5px 0 0 5px}
+  .result-cards .report-img__txt-wrap{justify-content:space-between;border-radius:0 5px 5px 0}
+  .div-block-5{margin-top:0;background-size:cover}
+}
+@media (max-width:767px){.result-cards{grid-template-columns:1fr}.result-cards .report-img{height:200px}}
+.w-webflow-badge{display:none!important}
