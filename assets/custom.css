@@ -15,3 +15,8 @@
 }
 @media (max-width:767px){.result-cards{grid-template-columns:1fr}.result-cards .report-img{height:200px}}
 .w-webflow-badge{display:none!important}
+/* Hero: full viewport height on every breakpoint */
+.section-hero{height:100vh;height:100svh;min-height:720px}
+/* Keep the hero composition centred under the header on tall screens */
+@media (min-width:992px){.section-hero{padding-top:max(100px,calc(69px + (100svh - 69px - 690px) / 2))}}
+@media (min-width:768px) and (max-width:991px){.section-hero{padding-top:max(100px,calc(69px + (100svh - 69px - 600px) / 2))}}
