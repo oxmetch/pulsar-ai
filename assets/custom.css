@@ -24,6 +24,6 @@
 @media (max-width:767px){
   .media-mobile{align-items:flex-start;height:auto;top:0;padding-top:0}
   body:has(.media-mobile) .header{top:32px}
-  .section-hero{padding-top:108px}
+  .section-hero{padding-top:108px;min-height:calc(412px + 100vw)}
   .section-hero__img-wrap,.hero-img-wrap{transform:translateY(32px)}
 }
